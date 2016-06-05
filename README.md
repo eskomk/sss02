@@ -20,6 +20,7 @@ Example Assignment – Super Simple Stock Market
 ##Design
 * Requirements say that the dividend yield and P/E ratio should be calculated before any trades are recorded.
 * That sounds that the real case was that some trades are recorded and then these calculations are done. This is how the solution is designed and implemented. The same applies to Stock Price calculation (15 min), that is, it is calculated after some trades are recorded (as is stated in Requirements).
+* Singleton-based, there is only one instance object in run-time of which methods are called in tests. Also there is only one instance object that holds the stocks and trades in run-time.
 
 #Test cases
 Before every test case some trades are recorded, and after every test case trades are removed from memory.
